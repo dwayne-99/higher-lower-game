@@ -21,16 +21,17 @@ def check_answer(guess, a_followers, b_followers):
     return guess == "b" # returns False
 
 score = 0
-game_should_continue = True
+game_should_continue = True 
 account_b = random.choice(data)
 
 while game_should_continue:
 
-  account_a = account_b
-  account_b = random.choice(data)
+  account_a = account_b # temporary variable to hold the previous account
+  account_b = random.choice(data) # pick a random account for a
   
   while account_a == account_b:
     account_b = random.choice(data)
+  # ensure a and b are different celebrities
   
   print(f"Compare A: {format_data(account_a)}.")
   print("")
