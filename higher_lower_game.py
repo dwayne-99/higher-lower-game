@@ -27,11 +27,11 @@ account_b = random.choice(data)
 while game_should_continue:
 
   account_a = account_b # temporary variable to hold the previous account
-  account_b = random.choice(data) # pick a random account for a
+  account_b = random.choice(data) # pick a random account for B
   
   while account_a == account_b:
     account_b = random.choice(data)
-  # ensure a and b are different celebrities
+  # ensure A and B are different celebrities
   
   print(f"Compare A: {format_data(account_a)}.")
   print("")
